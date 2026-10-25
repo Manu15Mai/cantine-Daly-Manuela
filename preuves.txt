@@ -1,25 +1,4 @@
- // CAS 1
+//2.DECLAREZ LES DONNEES DE LA COMMANDE 
+ client:Awa code du  plat:1  Quantite:3 montant verse:5000
+ 
 
-le prix est 1500
-portion 1 : Attiéké-poisson - 1500 FCFA
-portion 2 : Attiéké-poisson - 1500 FCFA
-portion 3 : Attiéké-poisson - 1500 FCFA
-chere, Awa le montant totale est 4500 FCFA
-votre monnaie est 500
-
-// CAS 2
-
-le prix est 2000
-portion 1 : Riz-poulet - 2000 FCFA
-portion 2 : Riz-poulet - 2000 FCFA
-chere, Awa le montant totale est 4000 FCFA
-vous devez payer 1000
-
-// CAS 3
-le prix est 1000
-portion 1 : undefined - 1000 FCFA
-portion 2 : undefined - 1000 FCFA
-portion 3 : undefined - 1000 FCFA
-portion 4 : undefined - 1000 FCFA
-chere, Awa le montant totale est 4000 FCFA
-vous devez payer 0

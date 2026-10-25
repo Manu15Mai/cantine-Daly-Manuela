@@ -7,22 +7,22 @@ let montantverse = 5000;
 
 Quantite = Number(Quantite);
 
-//   // le montant de la commande
-// let prixunitaireplat = 0;
-// if (codeplat >= 1 && codeplat <= 3 && Quantite > 0){
-// switch (codeplat){
-//     case 1:
-//         prixunitaireplat = 1500; 
-//     console.log(`le prix est ${prixunitaireplat}`); break;
-//     case 2:
-//         prixunitaireplat = 2000; 
-//         console.log(`le prix est ${prixunitaireplat}`); break;
-//     case 3:
-//         prixunitaireplat = 1000; 
-//         console.log(`le prix est ${prixunitaireplat}`); break;
-//     default:
-//         console.log(`erreur de commande`); 
-// }
+  // le montant de la commande
+let prixunitaireplat = 0;
+if (codeplat >= 1 && codeplat <= 3 && Quantite > 0){
+switch (codeplat){
+    case 1:
+        prixunitaireplat = 1500; 
+    console.log(`le prix est ${prixunitaireplat}`); break;
+    case 2:
+        prixunitaireplat = 2000; 
+        console.log(`le prix est ${prixunitaireplat}`); break;
+    case 3:
+        prixunitaireplat = 1000; 
+        console.log(`le prix est ${prixunitaireplat}`); break;
+    default:
+        console.log(`erreur de commande`); 
+}
 
 //  // le montant total
  

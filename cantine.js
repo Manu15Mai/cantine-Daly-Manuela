@@ -1,6 +1,8 @@
-const client = "Awa";
+let client = "Awa";
 let codeplat = 1;
-let quantite = Number(3);
+let Quantite = "3";
 let montantverse = 5000; 
 
-  // le montant de la commande
+ //conversion
+
+Quantite = Number(Quantite);

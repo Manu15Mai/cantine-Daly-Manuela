@@ -9,7 +9,7 @@ client:Awa code du  plat:1  Quantite:3 montant verse:5000
 le prix est 1500
 le montant total est 4500 FCFA
 
-//3.CALCULEZ LE MONTANT DE LA COMMANDE 
+//.CALCULEZ LE MONTANT DE LA COMMANDE 
 
 
 

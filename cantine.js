@@ -1,67 +1,68 @@
-// 2. DECLAREZ LES DONNEES DE LA COMMANDE
+  // 2. DECLAREZ LES DONNEES DE LA COMMANDE
 
 let client = "Awa";
 let codeplat = 1;
 let Quantite = "3";
 let montantverse = 5000;
 
-// conversion
+// Conversion et validation des donnees
 Quantite = Number(Quantite);
 
-function calculerTotal(prixUnitaire, quantite) {
-  return prixUnitaire * quantite;
+   //3. LE MONTANT DE LA COMMANDE
+
+let prixunitaireplat = 0;
+let typeplat;
+
+if (codeplat >= 1 && codeplat <= 3 && Quantite > 0){
+switch (codeplat){
+    case 1:
+        prixunitaireplat = 1500;
+        typeplat = "Attiéké-poisson";
+    console.log(`le prix est ${prixunitaireplat} : ${typeplat}`); break;
+    case 2:
+        prixunitaireplat = 2000;
+        typeplat = "Riz-poulet"; 
+        console.log(`le prix est ${prixunitaireplat} : ${typeplat} `); break;
+    case 3:
+        prixunitaireplat = 1000;
+        typeplat = "Alloco-oeuf" 
+        console.log(`le prix est ${prixunitaireplat} : ${typeplat}`); break;
+    default:
+        console.log(`erreur de commande`); 
 }
 
-if (
-  Number.isInteger(codeplat) &&
-  codeplat >= 1 &&
-  codeplat <= 3 &&
-  Number.isInteger(Quantite) &&
-  Quantite > 0 &&
-  Number.isFinite(montantverse) &&
-  montantverse >= 0
-) {
-  let typeplat;
-  let prixunitaireplat;
+ // le montant total
+ 
+ function calculerTotal(prixUnitaire, quantite) {
+let Montanttotal = prixUnitaire * quantite;
+return Montanttotal;
+ }
 
-  switch (codeplat) {
-    case 1:
-      typeplat = "Attiéké-poisson";
-      prixunitaireplat = 1500;
-      break;
-    case 2:
-      typeplat = "Riz-poulet";
-      prixunitaireplat = 2000;
-      break;
-    case 3:
-      typeplat = "Alloco-oeuf";
-      prixunitaireplat = 1000;
-      break;
-  }
+let montantfinal = calculerTotal(prixunitaireplat, Quantite);
 
-  const montantfinal = calculerTotal(prixunitaireplat, Quantite);
+    //4. AFFICHEZ LE RECAPPITULATIF 
 
-  console.log(
-    `Client : ${client} | Plat : ${typeplat} | Quantité : ${Quantite} | Montant versé : ${montantverse} FCFA`
-  );
 
-  for (let a = 1; a <= Quantite; a++) {
-    console.log(`portion ${a} : ${typeplat} - ${prixunitaireplat} FCFA`);
-  }
 
-  console.log(`Le montant total est ${montantfinal} FCFA`);
+for (let a = 1; a <= Quantite; a++){
+  console.log(`portion ${a} : ${typeplat} - ${prixunitaireplat} FCFA`); 
+}
 
-  if (montantverse > montantfinal) {
-    const reste = montantverse - montantfinal;
-    console.log(`Votre monnaie est de ${reste} FCFA`);
-  } else if (montantverse < montantfinal) {
-    const apayer = montantfinal - montantverse;
-    console.log(`Il vous reste ${apayer} FCFA à payer`);
-  } else {
-    console.log("Le montant est payé exactement.");
-  }
-} else {
-  console.log(
-    "Commande invalide : choisissez un code plat entier entre 1 et 3, une quantité entière positive et un montant versé positif ou nul."
-  );
+console.log(`chere, ${client} le montant totale est ${montantfinal} FCFA`);
+
+if(montantverse > montantfinal){
+let reste = montantverse - montantfinal;
+console.log(`votre monnaie est ${reste}`);
+}
+
+else{
+let apayer = montantfinal - montantverse;
+console.log(`vous devez payer ${apayer}`);   
+}
+
+}
+
+else{
+console.log(`choississez un code plat valide entre 1 et 3 et une Quantite strictement positive`);
+
 }

@@ -45,3 +45,5 @@ console.log(`tableau initial avant le tri : ${depensesSemaine}`)
 const tri = trierDepenses(depensesSemaine);
 console.log(`la copie triée : ${tri}`)
 console.log(`tableau initial après le tri : ${depensesSemaine}`);
+
+  

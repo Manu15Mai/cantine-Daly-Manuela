@@ -1,0 +1,17 @@
+J06 — Preuve d’exécution
+
+PS C:\Users\DELL\Documents\depart> node depenses.js
+
+Sortie obtenue après avoir terminé le programme :
+[Collez ici le rapport complet, y compris le tableau avant et après le tri.]
+somme : 14500FCFA
+la moyenne est : 1 FCFA
+les montantsstrictement supperieurs à 2000 FCFA sont : 2500,4000,2500,3000 FCFA
+la plus grande depense est : 1500,2500,0,4000,1000,2500,3000
+tableau initial avant le tri : 1500,2500,0,4000,1000,2500,3000
+la copie triée : 0,1000,1500,2500,2500,3000,4000
+tableau initial après le tri : 1500,2500,0,4000,1000,2500,3000
+
+
+Archive à remettre : J06_Nom_Prenom.zip
+Contenu attendu : depenses.js et preuves.txt

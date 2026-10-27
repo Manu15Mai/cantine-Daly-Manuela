@@ -2,7 +2,7 @@
 
 let client = "Awa";
 let codeplat = 1;
-let Quantite = "3";
+let Quantite = "3.1";
 let montantverse = 5000;
 
 // Conversion et validation des donnees
@@ -13,7 +13,7 @@ Quantite = Number(Quantite);
 let prixunitaireplat = 0;
 let typeplat;
 
-if (codeplat >= 1 && codeplat <= 3 && Quantite > 0){
+if (codeplat >= 1 && codeplat <= 3 && Quantite > 0 && Quantite % 1 === 0){
 switch (codeplat){
     case 1:
         prixunitaireplat = 1500;
@@ -63,6 +63,6 @@ console.log(`vous devez payer ${apayer}`);
 }
 
 else{
-console.log(`choississez un code plat valide entre 1 et 3 et une Quantite strictement positive`);
+console.log(`choississez un code plat valide entre 1 et 3 et une Quantite strictement positive, différent d'un nombre décimal`);
 
 }
